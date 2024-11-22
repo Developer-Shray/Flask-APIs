@@ -18,7 +18,10 @@ def get_data():
     for row in rows:
         data.append({
             'Id': row[4],
-            'First_Name': row[0]
+            'First_Name': row[0],
+            'Last_Name': row[1],
+            'Age': row[3],
+
         })
         
     return jsonify(data)
